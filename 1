@@ -1,0 +1,12 @@
+class Character:
+    def __init__(self, name, level, health, attack):
+        self.name = name
+        self.level = level
+        self.health = health
+        self.attack = attack
+    def display_info(self):
+        print(
+            f"Ім'я: {self.name}, Рівень: {self.level}, Здоров'я: {self.health}, Атака: {self.attack}"
+        )
+warrior = Character("Warrior", 3000, 96, 993)
+warrior.display_info()
